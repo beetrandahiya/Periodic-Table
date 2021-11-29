@@ -26,7 +26,7 @@ function loadElements() {
     let url = 'https://beetrandahiya.github.io/Periodic-Table/periodictable.json';
     req.open('GET', url);
     req.onload = function () {
-      console.log(JSON.parse(req.response));
+      
       resolve(JSON.parse(req.response).elements);
     };
     req.send();
