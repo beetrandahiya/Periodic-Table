@@ -23,5 +23,7 @@ You can click on any element you want and get information about it.<br>
 And then, If you like it, you should definitely share it with your friends and teachers,<br>
 and of course click that star button here on github if you think I have done a good job at making it.<br>
 
+## Screenshots
 
+<img src="snip.jpeg">
 
