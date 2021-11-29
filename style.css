@@ -173,3 +173,18 @@ main abbr.actinide {
   color: inherit;
   text-decoration: none;
 }
+
+
+.author{
+  position: absolute;
+  left:50px;
+  bottom:-300px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #fff;
+  font-weight: 300; 
+}
+.author a{
+  color: #fff;
+  text-decoration: none;
+}
