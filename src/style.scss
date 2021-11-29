@@ -1,0 +1,217 @@
+$grid-size-x: 3.4rem;
+$grid-size-y: 3.6rem;
+$grid-x: 18;
+$grid-y: 5;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$heading: #59656f;
+$metal: #4cddf3;
+$metalloid: #3aefb6;
+$nonmetal: #52ee61;
+$transition: #fd8572;
+$noble: #759fff;
+$alkaline: #dee955;
+$alkali: #a0ccda;
+$lanthanide: #ec77a3;
+$actinide: #c686cc;
+$metalshadow:  rgba(76, 221, 243,0.37);
+$metalloidshadow: rgba(58, 239, 182,0.37);
+$nonmetalshadow: rgba(82, 238, 97,0.37);
+$transitionshadow: rgba(253, 133, 114,0.37);
+$nobleshadow: rgba(117, 159, 255,0.37);
+$alkalineshadow: rgba(222, 233, 85,0.37);
+$alkalishadow: rgba(160, 204, 218,0.37);
+$lanthanideshadow: rgba(236, 119, 163,0.37);
+$actinideshadow: rgba(198, 134, 204,);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#canvas-basic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  z-index: -1;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 2rem 2rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+main,
+.info {
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat($grid-x, 1fr);
+  grid-template-rows: repeat($grid-y, 1fr);
+  grid-gap: 0.5rem;
+
+  h1 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+    grid-row: 1 / span 2;
+    grid-column: 4 / span 8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(25,26,34, 0.25);
+    box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+  }
+
+  abbr {
+    width: $grid-size-x;
+    height: $grid-size-y;
+    grid-row: 1;
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border: 1px solid white;
+    transition: 0.1s all ease;
+    cursor: default;
+
+    overflow: hidden;
+    background: none;
+
+    &:hover,
+    &.focus {
+      transform: scale(2);
+      box-shadow: 0 19px 15px rgba(0, 0, 0, 0.5);
+      overflow: visible;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    &.metal {
+      border-color: $metal;
+      color: $metal;
+      text-shadow: 0 0 0.2vw $metal;
+    }
+    &.metalloid {
+      border-color: $metalloid;
+      color: $metalloid;
+      text-shadow: 0 0 0.2vw $metalloid;
+    }
+    &.transition {
+      border-color: $transition;
+      color: $transition;
+      text-shadow: 0 0 0.2vw $transition;
+    }
+    &.noble {
+      border-color: $noble;
+      color: $noble;
+      text-shadow: 0 0 0.2vw $noble;
+    }
+    &.nonmetal {
+      border-color: $nonmetal;
+      color: $nonmetal;
+      text-shadow: 0 0 0.2vw $nonmetal;
+    }
+    &.alkali {
+      border-color: $alkali;
+      color: $alkali;
+      text-shadow: 0 0 0.2vw $alkali;
+    }
+    &.alkaline {
+      border-color: $alkaline;
+      color: $alkaline;
+      text-shadow: 0 0 0.2vw $alkaline;
+    }
+    &.lanthanide {
+      border-color: $lanthanide;
+      color: $lanthanide;
+      text-shadow: 0 0 0.2vw $lanthanide;
+    }
+    &.actinide {
+      border-color: $actinide;
+      color: $actinide;
+      text-shadow: 0 0 0.2vw $actinide;
+    }
+  }
+}
+
+.info {
+  margin-top: 1rem;
+  width: 18 * $grid-size-x + 10rem;
+  height: auto;
+
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  grid-template-rows: 2rem auto;
+  grid-template-columns: 8fr 5fr;
+  grid-column-gap: 2rem;
+  background: rgba(25,26,34, 0.25);
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-weight: 300;
+  transition: 0.5s height ease-in-out;
+
+  p {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    line-height: 1.3;
+  }
+
+  ul {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    line-height: 1.3;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        text-align: right;
+        min-width: 120px;
+
+        &.bold {
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+}
