@@ -1,5 +1,5 @@
 # Periodica
-<img src="icon.png"><br>
+<img src="icon.png" ><br>
 Periodica is a Beautiful yet extremely useful and intuitive Periodic Table representation.<br>
 It gives you important information about all the elements with a small description about the history and uses of the element <br>
 and also includes details like:
