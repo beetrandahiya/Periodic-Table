@@ -1,5 +1,4 @@
-# Periodica
-<p align="center"><img src="icons8-inactive-state-96.png" ></p><br>
+<p align="center"><img src="Priodica_Banner.png" ></p><br>
 Periodica is a Beautiful yet extremely useful and intuitive Periodic Table representation.<br>
 It gives you important information about all the elements with a small description about the history and uses of the element <br>
 and also includes details like:
@@ -15,8 +14,8 @@ and also includes details like:
 </ul>
 
 ## Usage
-Link : https://periodic-table-navy.vercel.app/
-Just visit the link and, there you go, yuo have an entire beautiful loking periodic table at your disposal. <br>
+Link : https://periodic-table-navy.vercel.app/ <br>
+Just visit the link and, there you go, you have an entire beautiful loking periodic table at your disposal. <br>
 Now, You can either keep staring at the table , coz, why not? Its so beautiful.<br>
 or <br>
 You can click on any element you want and get information about it.<br>
