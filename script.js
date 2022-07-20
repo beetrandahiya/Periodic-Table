@@ -23,7 +23,7 @@ loadElements().then(outputElements);
 function loadElements() {
   return new Promise((resolve, reject) => {
     let req = new XMLHttpRequest();
-    let url = 'https://beetrandahiya.github.io/Periodic-Table/periodictable.json';
+    let url = './periodictable.json';
     req.open('GET', url);
     req.onload = function () {
       
